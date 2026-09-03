@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作品模板 · 复制我 | 薛博作品集</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- ============================================================
+     ★ 这是新作品页的模板，如何使用：
+     1. 复制本文件，改名为 work-04.html（下一个作品就 05、06……）
+     2. 把 <title> 和下面所有"待替换"文字改成真实内容
+     3. 视频放 videos 文件夹，文件名改成和页面一致（如 work-04.mp4）
+     4. 到 works.html 里复制一张卡片，把链接改成 work-04.html
+     5. 竖屏视频保留 class="player-wrap vertical"，
+        横屏视频把 vertical 这个词删掉
+     ============================================================ -->
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">薛博<em>.</em></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="works.html" class="active">作品</a>
+        <a href="about.html">关于我</a>
+        <a href="index.html#contact">联系</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="打开菜单">☰</button>
+    </div>
+  </header>
+
+  <main class="work-page">
+    <div class="container">
+      <a href="works.html" class="back-link">← 返回作品列表</a>
+
+      <div class="work-head">
+        <h1>作品标题（待替换）</h1>
+        <div class="work-tags">
+          <span class="tag hl">分类标签</span>
+          <span class="tag">竖屏 9:16 或 横屏 16:9</span>
+          <span class="tag">其他标签</span>
+        </div>
+      </div>
+
+      <div class="player-wrap vertical">
+        <video controls playsinline preload="metadata"
+                poster="assets/poster-vertical.png" src="videos/作品文件名.mp4"></video>
+      </div>
+      <p class="player-note">此处为精选片段 · 完整版可面谈时播放</p>
+
+      <div class="facts">
+        <div class="fact">
+          <div class="k">项目背景</div>
+          <div class="v">给谁做的、什么项目、什么平台（待替换）。</div>
+        </div>
+        <div class="fact">
+          <div class="k">我的角色</div>
+          <div class="v">你具体负责的部分（待替换）。</div>
+        </div>
+        <div class="fact">
+          <div class="k">设备与软件</div>
+          <div class="v">相机型号 + 剪辑软件（待替换）。</div>
+        </div>
+        <div class="fact">
+          <div class="k">成果数据</div>
+          <div class="v">播放量 / 转化 / 客户反馈（待替换）。</div>
+        </div>
+      </div>
+
+      <div class="work-story">
+        <h2>这条片子做了什么</h2>
+        <p>项目来龙去脉（待替换）。</p>
+        <h2>我怎么做</h2>
+        <p>你的思路和手上功夫（待替换）。</p>
+        <h2>结果如何</h2>
+        <p>数据或客户反馈（待替换）。</p>
+      </div>
+
+      <div class="work-nav">
+        <a href="works.html">← 返回作品列表</a>
+        <a href="works.html">返回作品列表 →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 薛博 · 摄像 / 剪辑师 · 求职作品集</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

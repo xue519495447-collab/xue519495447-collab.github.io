@@ -1,0 +1,1 @@
+简历 PDF 就位后命名为 xuebo-resume.pdf 放在这个文件夹（由 AI 根据旧简历重排生成）。

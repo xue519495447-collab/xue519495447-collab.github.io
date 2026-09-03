@@ -1,0 +1,20 @@
+# 原始素材：558MB 原片，绝不入库（一旦提交会永久留在 .git 历史里）
+raw/
+*.mov
+*.mxf
+*.braw
+
+# 内部产物：_qa 曾含完整 Chrome 配置目录（Login Data / Cookies），必须排除
+_qa/
+_resume/
+_process.log
+*.log
+
+# 本地打包与系统文件
+*.zip
+*.7z
+*.rar
+对接文件.md
+.DS_Store
+Thumbs.db
+desktop.ini

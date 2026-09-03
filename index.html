@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 网站标题：浏览器标签页 + 微信分享卡片上的标题 -->
+  <title>薛博 | 摄像 · 剪辑师 · 5年短视频经验</title>
+  <meta name="description" content="薛博，5年经验的摄像剪辑师：口播带货、信息流广告、品牌宣传片。A7M4 / FX3 摄像，PR / 达芬奇后期。" />
+  <!-- 微信/社交分享卡片信息（og-cover 图换成你自己的封面更好） -->
+  <meta property="og:title" content="薛博 | 摄像 · 剪辑师" />
+  <meta property="og:description" content="5年短视频经验：口播带货 · 信息流广告 · 品牌宣传片" />
+  <meta property="og:image" content="assets/og-cover.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== 顶部导航栏 ===== -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">薛博<em>.</em></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">首页</a>
+        <a href="works.html">作品</a>
+        <a href="about.html">关于我</a>
+        <a href="index.html#contact">联系</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="打开菜单">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 第一屏：循环播放的精选片段 + 一句话定位 ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <!-- 开场的小标签：可以改成你想要的任何话 -->
+          <span class="hero-kicker">OPEN FOR WORK · 求职中</span>
+          <h1>把产品拍好看，<br />把故事<em>剪进人心</em>。</h1>
+          <p class="hero-subtitle">
+            我是薛博，5 年摄像 / 剪辑经验。口播带货、信息流广告、品牌宣传片都做过——
+            从前期拍摄到后期成片，一个人也能扛起一条片子。
+          </p>
+          <p class="hero-meta">索尼 A7M3 / A7M4 / FX3 · Premiere / 达芬奇</p>
+          <div class="hero-buttons">
+            <a href="works.html" class="btn btn-primary">看我的作品</a>
+            <a href="#contact" class="btn btn-outline">联系我</a>
+          </div>
+        </div>
+
+        <!-- 首屏视频舞台：三部王牌作品的 20 秒片段循环播放（静音）。
+             换片段：把新文件放进 videos/，改 main.js 顶部的 HERO_LIST 即可。 -->
+        <div class="hero-stage" id="heroStage">
+          <video id="heroVideo" muted playsinline preload="metadata"
+                 poster="assets/hero-poster.jpg"
+                 src="videos/hero-1.mp4"></video>
+          <div class="hero-fallback" id="heroFallback" hidden>精选片段 · 待视频上传</div>
+          <span class="hero-hint">精选 · 自动循环</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 精选作品 ===== -->
+    <section id="featured" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">精选作品</h2>
+        <p class="section-lead fade-in">
+          从 5 年里挑出最有代表性的几条。全部作品在「作品」页，每条都有独立介绍页。
+        </p>
+
+        <!-- 每张卡片对应一个作品的详情页。换内容时改：链接、标题、描述、缩略图 -->
+        <div class="work-grid">
+          <a href="work-03.html" class="work-card fade-in">
+            <div class="work-thumb">
+              <img class="thumb-img" src="assets/thumb-03.jpg" alt="京东外卖封面" />
+              <span class="thumb-cat">热点视频 ★</span>
+            </div>
+            <div class="work-body">
+              <h3>京东外卖</h3>
+              <p>热点跟拍 · 拍+剪全流程 · 播放 8 万+。</p>
+              <span class="work-more">查看详情 →</span>
+            </div>
+          </a>
+
+          <a href="work-07.html" class="work-card fade-in">
+            <div class="work-thumb">
+              <img class="thumb-img" src="assets/thumb-07.jpg" alt="铁三角封面" />
+              <span class="thumb-cat">人设视频 ★</span>
+            </div>
+            <div class="work-body">
+              <h3>铁三角</h3>
+              <p>9 分钟人设长片 · 拍+剪全流程。</p>
+              <span class="work-more">查看详情 →</span>
+            </div>
+          </a>
+
+          <a href="work-13.html" class="work-card fade-in">
+            <div class="work-thumb">
+              <img class="thumb-img" src="assets/thumb-13.jpg" alt="职场故事封面" />
+              <span class="thumb-cat">人设视频 ★</span>
+            </div>
+            <div class="work-body">
+              <h3>职场故事</h3>
+              <p>职场人设系列 · 拍+剪全流程 · 播放 2 万+。</p>
+              <span class="work-more">查看详情 →</span>
+            </div>
+          </a>
+        </div>
+
+        <div style="margin-top: 36px; text-align: center;">
+          <a href="works.html" class="btn btn-outline">全部作品（13）→</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 我能做什么 ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title fade-in">我能做什么</h2>
+        <p class="section-lead fade-in">前期后期都能上手，不需要公司再配第二个人。</p>
+
+        <div class="cap-grid">
+          <div class="cap-card fade-in">
+            <div class="cap-icon">🎙️</div>
+            <h3>口播带货视频</h3>
+            <p>脚本节奏、留人开头、转化引导，熟练对口播类短视频的全流程。</p>
+          </div>
+          <div class="cap-card fade-in">
+            <div class="cap-icon">📈</div>
+            <h3>信息流广告</h3>
+            <p>批量产出可测试的素材版本，懂得为投放数据服务，不为炫技服务。</p>
+          </div>
+          <div class="cap-card fade-in">
+            <div class="cap-icon">🎬</div>
+            <h3>品牌宣传片</h3>
+            <p>从分镜、拍摄到调色配乐成片，有完整交付长片的经验。</p>
+          </div>
+          <div class="cap-card fade-in">
+            <div class="cap-icon">📷</div>
+            <h3>摄像 / 掌机</h3>
+            <p>A7M3 / A7M4 / FX3 实拍经验，布光、运镜、收音独立完成。</p>
+          </div>
+        </div>
+
+        <!-- 设备与软件：改文字即可 -->
+        <p class="subhead">设备与软件</p>
+        <div class="tag-row fade-in">
+          <span class="tag hl">Sony A7M4</span>
+          <span class="tag hl">Sony A7M3</span>
+          <span class="tag hl">Sony FX3</span>
+          <span class="tag hl">ZV-E10</span>
+          <span class="tag">Premiere Pro</span>
+          <span class="tag">达芬奇 DaVinci</span>
+          <span class="tag">AE</span>
+          <span class="tag">剪映专业版</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 联系方式 ===== -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title fade-in">联系我</h2>
+        <p class="section-lead fade-in" style="margin-left:auto;margin-right:auto;">
+          招聘 / 项目合作都欢迎，微信或邮箱都可以，看到会尽快回复。
+        </p>
+
+        <div class="contact-actions fade-in">
+          <a href="mailto:519495447@qq.com" class="btn btn-primary btn-large">📧 519495447@qq.com</a>
+          <a href="resume/xuebo-resume.pdf" download class="btn btn-outline btn-large">下载简历 PDF</a>
+        </div>
+
+        <!-- 微信号：点击"复制"按钮即可复制 -->
+        <div class="contact-row fade-in">
+          <span class="wechat-chip">
+            微信号 <b>X_X_0508</b>
+            <button class="copy-btn" id="copyWechat">复制</button>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container">
+      © 2026 薛博 · 摄像 / 剪辑师 · 求职作品集
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
